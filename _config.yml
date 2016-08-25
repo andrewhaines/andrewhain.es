@@ -1,12 +1,13 @@
 # Site Settings
-title: Start Jekyll
-email: taniarascia@gmail.com
+title: Andrew Haines
+email: andrew.m.haines@gmail.com
 description: >
-  A guide to getting started with Jekyll.
-baseurl: "/andrewhain.es"
-url: "https://andrewhaines.github.io"
-twitter_username: taniarascia
-github_username:  taniarascia
+  I do things
+#baseurl: "/andrewhain.es"
+#url: "https://andrewhaines.github.io"
+url: "http://andrewhain.es"
+twitter_username: am_haines
+github_username:  andrewhaines
 # Build Settings
 sass:
   sass_dir: _sass
