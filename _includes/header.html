@@ -2,7 +2,7 @@
 	<div class="container">
 		<nav>
 			<ul>
-				<li><a href="https://ethikapolitika.org/author/andrew-haines/"><i class="fa fa-bookmark-o" style="margin-right: 12px;"></i>Writing</a></li>
+				<li><a href="#" class="toggle-overlay"><i class="fa fa-bookmark-o" style="margin-right: 12px;"></i>Writing</a></li>
 				<li><a href="https://github.com/andrewhaines"><i class="fa fa-github"></i></a></li>
 				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
 			</ul>
@@ -12,6 +12,17 @@
 	</div>
 </aside>
 
+<div class="meganav">
+  <div class="outer-close toggle-overlay">
+    <a class="close"><span></span></a>
+  </div>
+  <nav>
+    <ul>
+			<li><a href="https://ethikapolitika.org/author/andrew-haines/"><i class="fa fa-bookmark-o" style="margin-right: 12px;"></i><em>Ethika Politika</em></a></li>
+    </ul>
+  </nav>
+</div>
+
 <header>
 	<div class="container">
 	  <div class="row">
@@ -20,8 +31,18 @@
 	    </div>
 	    <div class="col-xs-12 col-sm-8">
 	      <h1>Andrew<br>Haines</h1>
-				<h2>I like to make things.<br>But I love <em>wondering about them.</em></h2>
+				<h2>I like making things.<br>But I love <em>wondering about them.</em></h2>
 	    </div>
 	  </div>
 	</div>
 </header>
+
+<script>
+	(function($) {
+	  $(function() {
+	    $('.toggle-overlay').click(function() {
+	      $('.meganav').toggleClass('open');
+	    });
+	  });
+	})(jQuery);
+</script>
