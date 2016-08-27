@@ -1,13 +1,28 @@
+/* General */
+
 $content-width: 800px;
-$main: #19CCAA;
-$font-style: 'Open Sans', sans-serif;
-$font-color: #262626;
-$link-color: #425469;
-$link-hover-color: $main;
-$heading-font: 'Muli', sans-serif;
-$heading-font-color: #425469;
+
+/* Colors */
+
+$main: #222;
+$white: #FFF;
+$black: #333;
+$dark_gray: #444;
+$yellow: #F9D423;
+$orange: #FC913A;
+$red: #FF4E50;
+$green: #E1F5C4;
+
+
 $light: #E7EDF4;
-$header:  #1D1425;
+$header:  #222;
+$font-color: #222;
+
+/* Fonts */
+
+$font-style: 'Open Sans', sans-serif;
+$heading-font: 'Roboto Slab', serif;
+$link-hover-color: $main;
 
 *,
 *::before,

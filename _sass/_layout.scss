@@ -5,22 +5,23 @@ body {
 	font-size: 1.1em;
 	line-height: 1.6;
 	-webkit-font-smoothing: antialiased;
+	background: $black;
 }
 h1,
 h2,
 h3 {
 	font-weight: 600;
-	color: $heading-font-color;
+	color: $yellow;
 	font-family: $heading-font;
 	line-height: 1.5;
 }
 h1 {
-	color: $main;
+	color: $yellow;
 	font-size: 2.5em;
 	a,
 	a:visited {
 		text-decoration: none;
-		color: $main;
+		color: $yellow;
 	}
 }
 h2 {
@@ -28,23 +29,37 @@ h2 {
 }
 a,
 a:visited {
-	color: $link-color;
+	color: $yellow;
 	text-decoration: underline;
 	font-weight: bold;
 }
 a:hover {
-	color: $link-hover-color;
+	color: $orange;
 	text-decoration: underline;
 }
 header {
-	background: $header;
+	/*background: $header;*/
+	background-image: url('https://s3.amazonaws.com/andrewhain.es/images/bgs/montepulciano.jpg');
+	background-size: 100%;
+	background-position: 0% 0%;
+	background-attachment: fixed;
 	padding: 0px 15px;
 	text-align: center;
 	margin: 50px 0 0;
-	height: 50vh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	.headshot {
+		border-radius: 50%;
+		max-width: 200px;
+		box-shadow: 0 0 15px $black;
+	}
+	h1 {
+		margin-left: 50px;
+		line-height: 60px;
+		font-size: 55px;
+	}
 }
 main {
 	padding: 0 15px;
@@ -65,11 +80,11 @@ aside {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #fff;
+	background: #222;
 	width: 100%;
 	z-index: 2;
-	border-bottom: 1px solid lighten($light, 30%);
-	box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);
+	border-bottom: 0px solid $black;
+	/*box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);*/
 	nav {
 		float: left;
 		max-width: 800px;
@@ -89,11 +104,13 @@ aside {
 					line-height: 20px;
 					margin-bottom: -1px;
 					box-shadow: 0;
+					color: $yellow;
+					&:visited,
 					&:hover,
 					&:active {
-						background: $header;
+						background: $dark_gray;
 						text-decoration: none;
-						color: $main;
+						color: $yellow;
 					}
 				}
 			}
