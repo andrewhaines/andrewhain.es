@@ -2,9 +2,9 @@
 	<div class="container">
 		<nav>
 			<ul>
-				<li><a href="#" class="toggle-overlay"><i class="fa fa-bookmark-o" style="margin-right: 12px;"></i>Writing</a></li>
+				<li><a href="#" class="toggle-writing-overlay"><i class="fa fa-bookmark-o" style="margin-right: 12px;"></i>Writing</a></li>
 				<li><a href="https://github.com/andrewhaines"><i class="fa fa-github"></i></a></li>
-				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+				<li><a href="#" class="toggle-contact-overlay"><i class="fa fa-envelope"></i></a></li>
 			</ul>
 			</li>
 			</ul>
@@ -12,15 +12,35 @@
 	</div>
 </aside>
 
-<div class="meganav">
-  <div class="outer-close toggle-overlay">
+<div class="writing">
+  <div class="outer-close toggle-writing-overlay">
     <a class="close"><span></span></a>
   </div>
   <nav>
     <ul>
-			<li><a href="https://ethikapolitika.org/author/andrew-haines/"><i class="fa fa-bookmark-o" style="margin-right: 12px;"></i><em>Ethika Politika</em></a></li>
+			<li><a href="https://ethikapolitika.org/author/andrew-haines/"><i class="fa fa-university" style="margin-right: 20px;"></i><em>Ethika Politika</em></a></li>
+			<li><a href="https://fiatinsight/blog"><i class="fa fa-code" style="margin-right: 20px;"></i>Fiat Insight</a></li>
     </ul>
   </nav>
+</div>
+
+<div class="contact">
+  <div class="outer-close toggle-contact-overlay">
+    <a class="close"><span></span></a>
+  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+			  <form id="contact-form" action="https://formspree.io/andrew.m.haines@email.com" method="POST">
+					<p>I'd love to hear from you. Send me a note!</p>
+					<input type="text" name="name" placeholder="Your name">
+					<input type="email" name="_replyto" placeholder="Your email">
+					<textarea form="contact-form" type="text" name="message" placeholder="Your message" rows="3"></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
 
 <header>
@@ -40,8 +60,16 @@
 <script>
 	(function($) {
 	  $(function() {
-	    $('.toggle-overlay').click(function() {
-	      $('.meganav').toggleClass('open');
+	    $('.toggle-writing-overlay').click(function() {
+	      $('.writing').toggleClass('open');
+	    });
+	  });
+	})(jQuery);
+
+	(function($) {
+	  $(function() {
+	    $('.toggle-contact-overlay').click(function() {
+	      $('.contact').toggleClass('open');
 	    });
 	  });
 	})(jQuery);

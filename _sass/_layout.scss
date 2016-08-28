@@ -38,7 +38,6 @@ a:hover {
 	text-decoration: underline;
 }
 header {
-	/*background: $header;*/
 	background-image: url('https://s3.amazonaws.com/andrewhain.es/images/bgs/montepulciano.jpg');
 	background-size: cover;
 	background-position: 0% 0%;
@@ -137,7 +136,7 @@ footer {
 	text-align: center;
 	padding: 40px;
 }
-.meganav {
+.writing {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -148,6 +147,43 @@ footer {
 	z-index: 2;
 	opacity: 0;
 	visibility: hidden;
+}
+.contact {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(200deg, $black, $dark_gray, $black);
+	transition: all .5s ease;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	p {
+		color: $yellow;
+		margin-bottom: 30px;
+		font-size: 26px;
+	}
+	input[type=text],
+	input[type=email],
+	textarea {
+		width: 100%;
+		padding: 20px;
+		border-radius: 5px;
+		margin-bottom: 20px;
+	}
+	input[type=submit] {
+		width: 100%;
+		padding: 12px auto;
+		background: transparent;
+		color: $white;
+		font-size: 22px;
+		border-radius: 5px;
+		border: 1px solid $white;
+	}
 }
 .open {
 	opacity: 1;
@@ -190,7 +226,7 @@ footer {
     height: 85px;
     cursor: pointer;
 }
-.meganav nav {
+.writing nav {
 	text-align: center;
 	height: 95vh;
 	display: flex;
@@ -209,9 +245,10 @@ footer {
 				transition: all 0.5s ease;
 				display: block;
 				text-decoration: none;
-				color: rgba(255, 255, 255, .5);
+				color: $yellow;
+				opacity: .8;
 				&:hover {
-					color: rgba(255, 255, 255, .9);
+					opacity: 1;
 					transform: scale(1.1);
 					&:before {
 						visibility: visible;
@@ -225,7 +262,7 @@ footer {
 					height: 2px;
 					bottom: 0;
 					left: 25%;
-					background: white;
+					background: $yellow;
 					visibility: hidden;
 					transform: scaleX(0);
 					transition: all 0.3s ease-in-out 0s;
